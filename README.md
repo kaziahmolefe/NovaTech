@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-# Edutrack Studen Portal
+# Edutrack Student Portal
 
 ## Day 1
 
