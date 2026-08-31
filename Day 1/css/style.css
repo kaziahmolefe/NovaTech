@@ -1,0 +1,264 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+/* Page background */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+}
+
+.page {
+    width:100%;
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+
+    /* Include background image */
+    background-image: url("../images/edutrack-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Outer portal card */
+
+.portal-card {
+    width: 435px;
+    height: 365px;
+
+    background: linear-gradient(
+        135deg,
+        #ffb6d5 0%,
+        #ffafd0 50%,
+        #ff9fc7 100%
+    );
+    
+    border: 4px solid #000000;
+    border-radius: 45px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45);
+}
+
+/* Header */
+
+.portal-header {
+    height: 105px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 13px 18px 0 18px;
+}
+
+/* NovaTech Logo*/
+
+.company-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.company-logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.company-brand span {
+    color: #ffffff;
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+/* Edutrack branding */
+
+.edutrack-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+.edutrack-brand div {
+    display: inline-block;
+    background-color: #ff0080;
+    color: #000000;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1;
+    padding: 3px 6px;
+}
+
+/* Inner login panel */
+
+.login-panel {
+    width: calc(100% - 32px);
+    height: 245px;
+    margin: 0 16px;
+    padding: 12px 12px 10px;
+
+    /* Main panel */
+
+    background: linear-gradient(
+        135deg,
+        #ff8e82 0%,
+        #ffa2a5 55%,
+        #ffb0c8 100%
+    );
+    border-radius: 34px;
+}
+
+/* Welcome Back! */
+
+.login-panel h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 23px;
+    margin-bottom: 16px;
+}
+
+/* Form group */
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    color: #ffffff;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+.form-group input {
+    width: 100%;
+    height: 20px;
+    border: none;
+    border-bottom: 3px solid #ffffff;
+    background: transparent;
+    outline: none;
+    font-size: 13px;
+    color: #000000;
+}
+
+/* Login options */
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+    margin-bottom: 8px;
+    font-size: 11px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.remember input {
+    width: 21px;
+    height: 21px;
+    accent-color: #ffffff;
+}
+
+.login-options a {
+    color: #4d4d4d;
+    text-decoration: none;
+}
+
+.login-options a:hover {
+    text-decoration: underline;
+}
+
+/* Login button */
+
+.login-button {
+    display: block;
+    width: 218px;
+    height: 35px;
+    margin: 0 auto 14px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(
+        to bottom,
+        #f8a4ff,
+        #ffffff
+    );
+
+    color: #d00070;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+.login-button:hover {
+    background: linear-gradient(
+        to bottom
+        #f8a4ff,
+        #ffffff
+    );
+}
+
+/* Register section */
+
+.register {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 5px;
+    font-size: 11px;
+    color: #000000;
+    white-space: nowrap;
+}
+
+.register a {
+    color:#4d4d4d;
+    text-decoration: none;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+/*Responsive design for Mobile*/
+
+@media (max-width: 600px) {
+
+    .page {
+        padding: 20px;
+    }
+
+    .portal-card {
+        width: 100%;
+        max-width: 435px;
+    }
+
+    .edutrack-brand div {
+        font-size: 18px;
+    }
+
+    .company-brand span {
+        font-size: 9px;
+    }
+
+}

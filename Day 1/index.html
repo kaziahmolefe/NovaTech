@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login Page - Edutrack Student Portal</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+    <main class="page">
+
+        <!-- Main Login Card -->
+        <section class="portal-card">
+
+
+            <!-- =================================
+                 PORTAL HEADER
+                 ================================= -->
+
+            <div class="portal-header">
+
+
+                <!-- NovaTech Branding -->
+                <div class="company-brand">
+
+                    <img
+                        src="images/novatech-logo.png"
+                        alt="NovaTech Digital Logo"
+                        class="company-logo"
+                    >
+
+                    <span>
+                        Powered by NovaTech Digital
+                    </span>
+
+                </div>
+
+
+                <!-- Edutrack Branding -->
+                <div class="edutrack-brand">
+
+                    <div>
+                        Edutrack
+                    </div>
+
+                    <div>
+                        Student Portal
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 LOGIN PANEL
+                 ================================= -->
+
+            <div class="login-panel">
+
+
+                <h1>
+                    WELCOME BACK!
+                </h1>
+
+
+                <form id="loginForm">
+
+
+                    <!-- Username -->
+
+                    <div class="form-group">
+
+                        <label for="username">
+                            Enter username
+                        </label>
+
+                        <input
+                            type="text"
+                            id="username"
+                            name="username"
+                            autocomplete="username"
+                        >
+
+                    </div>
+
+
+
+                    <!-- Password -->
+
+                    <div class="form-group">
+
+                        <label for="password">
+                            Enter password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            autocomplete="current-password"
+                        >
+
+                    </div>
+
+
+
+                    <!-- Login Options -->
+
+                    <div class="login-options">
+
+
+                        <label class="remember">
+
+                            <input
+                                type="checkbox"
+                                id="rememberMe"
+                            >
+
+                            <span>
+                                Remember me
+                            </span>
+
+                        </label>
+
+
+                        <a href="#" id="forgotPassword">
+                            Forgot password?
+                        </a>
+
+
+                    </div>
+
+
+
+                    <!-- Login -->
+
+                    <button
+                        type="submit"
+                        class="login-button"
+                    >
+                        Login
+                    </button>
+
+
+                    <!-- Registration -->
+
+                    <div class="register">
+
+                        <span>
+                            Don't have an account yet?
+                        </span>
+
+                        <a href="#" id="registerLink">
+                            Register
+                        </a>
+
+                    </div>
+
+
+                </form>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
