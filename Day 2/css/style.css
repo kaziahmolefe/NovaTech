@@ -23,7 +23,8 @@ body {
     align-items: center;
     padding: 35px;
     background-image:
-        url("../images/edutrack-background.jpg");
+        url("../images/registration_bg_image.jpg");
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -143,7 +144,7 @@ body {
 }
 
 /*=== REGISTER BUTTON ===*/
-.register--button {
+.register-button {
     display: block;
     width: 180px;
     height: 38px;
@@ -164,8 +165,8 @@ body {
 .register-button:hover {
     background: linear-gradient(
         to bottom,
-        #ffffff,
-        #f8a4ff
+        #f8a4ff,
+        #ffffff
     );
 }
 

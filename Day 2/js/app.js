@@ -1,11 +1,11 @@
 /*=== EDUTRACK STUDENT PORTAL REGISTRATION DAY 2 ===*/
 
-const registrationForm = document.getElementID("registrationForm");
+const registrationForm = document.getElementById("registrationForm");
 
 registrationForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const name = document.getElementID("name").value.trim();
+    const name = document.getElementById("name").value.trim();
 
     const surname = document.getElementID("surname").value.trim();
 
