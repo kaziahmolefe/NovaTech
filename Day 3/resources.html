@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=divice-width, inital-scale=1.0">
+        <title>Edutrack | Learning Resources</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/app.js" defer></script>
+    </head>
+
+    <body>
+        <div class="app-layout">
+            <aside class="sidebar">
+                <a href="index.html" class="brand">
+                    <img src="images/novatech-logo.png" alt="NovaTech Digital Logo">
+                    <span><strong>EDU<span>TRACK</span></strong><small>STUDENT PORTAL</small></span>
+                </a>
+
+                <div class="profile">
+                    <div class="avatar">S</div>
+                    <div><strong>Student Name</strong><small>Student Account</small></div>
+                </div>
+
+                <p class="nav-heading">WORKSPACE</p>
+                <nav class="navigation">
+                    <a class="nav-link" href="index.html"><span>▦</span>Dashboard</a>
+                    <a class="nav-link active" href="resources.html"><span>▤</span>Resources</a>
+                    <a class="nav-link" href="../Day%201/index.html"><span>↪</span>Log out</a>
+                </nav>
+
+                <div class="sidebar-footer">
+                    <span class="status-dot"></span> Student Portal Online
+                    <small>Powered by NovaTech Digital</small>
+                </div>
+            </aside>
+
+            <main class="main-content">
+                <header class="topbar">
+                    <div>
+                        <p class="eyebrow">YOUR LEARNING LIBRARY</p>
+                        <h1>Learning Resources</h1>
+                    </div>
+                    <a class="button button-pink" href="index.html">↪ Dashboard</a>
+                </header>
+
+                <section class="resources-hero">
+                    <div>
+                        <span class="pill">LEARN AT YOUR OWN PACE</span>
+                        <h2>Knowledge starts here<span>.</span></h2>
+                        <p>Find your study materials, explore useful documents and make every study session count.</p>
+                    </div>
+                    <div class="resources-hero-icon" aria-hideen="true">▤<span>✦</span></div>
+                </section>
+
+                <section class="section-block">
+                    <div class="section-heading">
+                        <div><p class="eyebrow">EXPLORE THE LIBRARY</p><h2>Available resources</h2></div>
+                        <span class="muted" id="resourceCount">6 new resources available</span>
+                    </div>
+
+                    <div class="resource-controls">
+                        <label class="search-box">
+                            <span>⌕</span>
+                            <input type="search" id="resourceSearch" placeholder="Search resources..." arai-label="Search resources...">
+                        </label>
+                        <label class="filter-label" for="categoryFilter">Category</label>
+                        <select id="categoryFilter">
+                            <option value="all">All categories</option>
+                            <option value="mgk534">MGK534</option>
+                            <option value="chm411">CHM411</option>
+                            <option value="pgr884">PGR884</option>
+                            <option value="study">Study Skills</option>
+                        </select>
+                    </div>
+
+                    <div class="resources-grid" id="resourcesGrid">
+                        <article class="resource-card" data-category="mgk534" data-search="html css web development beginner">
+                            <div class="reource-card-top"><span class="resource-type">STUDY GUIDE</span><span class="resource-s"></span></div>
+                            <div class="document-icon">HTML</div>
+                            <h3>Introduction to Web Development</h3>
+                            <p>Explore the fundamentals of HTML structure, CSS styling and building your first web page.</p>
+                            <div class="resource-meta"><span>MGK534</span><span>PDF document</span></div>
+                            <a class="resource-download" href="resources/intro-web-development.pdf" download>Download material</a>
+                        </article>
+
+                        <article class="resource-card" data-category="pgr884" data-search="javascript variables functions">
+                            <div class="resource-card-top"><span class="resource-type">STUDY NOTES</span><span class="resource-s"></span></div>
+                            <div class="document-icon">JS</div>
+                            <h3>JavaScript Fundamentals</h3>
+                            <p>Review variables, data types, functions, conditions and basic event handling.</p>
+                            <div class="resource-meta"><span>PGR884</span><span>PDF document</span></div>
+                            <a class="resource-download" href="resources/javascript-fundamentals.pdf" download>Download material</a>
+                        </article>
+
+                        <article class="resource-card" data-category="chm441" data-search="chemistry periodic table experiments">
+                            <div class="resource-card-top"><span class="resource-type">WORKSHEET</span><span class="resource-sync"></span></div>
+                            <div class="document-icon">CHM411</div>
+                            <h3>Chemistry Practice Worksheet</h3>
+                            <p>Practice chemistry equations, understanding chemical compounds and elements.</p>
+                            <div class="resource-meta"><span>CHM441</span><span>PDF document</span></div>
+                            <a class="resource-download" href="resources/chemistry-worksheet.pdf" download>Download material</a>
+                        </article>
+
+                        <article class="resource-card" data-category="study" data-search="study skills exam preparation revision notes">
+                            <div class="resource-card-top"><span class="resource-type">STUDY GUIDE</span><span class="resource-sync"></span></div>
+                            <div class="document-icon">PLAN</div>
+                            <h3>Effective Study Techniques</h3>
+                            <p>Learn practical revision, time-management and exam-preparation techniques.</p>
+                            <div class="resource-meta"><span>Study Skills</span><span>PDF document</span></div>
+                            <a class="resource-download" href="resources/study-techniques.pdf" download>Download material <span></span></a>
+                        </article>
+                    </div>
+
+                    <div class="empty-state" id="emptyState" hidden>
+                        <span>⌕</span>
+                        <h3>No resources found</h3>
+                        <p>Try a different search term or select another category.</p>
+                    </div>
+
+                </section>
+
+                <footer class="page-footer">© 2026 Edutrack Student Portal <span>Powered by NovaTech Digital</span><span>♡A KAZIAH EXPERIENCE</span></footer>
+            </main>
+        </div>
+    </body>
+</html>
